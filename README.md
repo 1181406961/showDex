@@ -1,14 +1,13 @@
-`yarn start` (react app frontend)
+`yarn start` (运行前端)
 
-`yarn chain` (hardhat backend)
+`yarn chain` (运行后端)
 
-`yarn deploy` (to compile, deploy, and publish your contracts to the frontend)
+`yarn deploy` (将合约部署到到指定环境)，当更新合约需要重新部署到时候，使用`yarn deploy --reset` 
 
+`Balloons.sol` 用于交易的ERC20代币.
 
- `yarn deploy` whenever you want to deploy new contracts to the frontend (run `yarn deploy --reset` for a completely fresh deploy if you have made no contract changes).
+`DEX.sol` 核心的交易合约.
 
-`Balloons.sol` is just an example ERC20 contract that mints 1000 $BAL to whatever address deploys it.
-
-`DEX.sol` is what we will build in this challenge and you can see it starts with a SafeMath library to help us prevent overflows and underflows and also tracks a token (ERC20 interface) that we set in the constructor (on deploy).
+运行效果如下:
 
 ![image](images/screenhot.png)
